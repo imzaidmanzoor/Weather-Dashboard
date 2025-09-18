@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Weather Dashboard</title>
+  <link rel="stylesheet" href="/CSS/main.css">
+</head>
+<body>
+  <div class="container fade-in">
+    <header>
+      <h1>🌤️ Live Weather Dashboard</h1>
+      <button id="toggleTheme">🌙</button>
+    </header>
+
+    <section class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city...">
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <main>
+      <section class="weather-card fade-in">
+        <h2 id="cityName">City Name</h2>
+        <p id="conditionText">Condition</p>
+        <h3 id="temp">-- °C</h3>
+        <p>Humidity: <span id="humidity">--</span>%</p>
+        <p>Wind: <span id="wind">--</span> km/h</p>
+      </section>
+
+      <section class="forecast fade-in">
+        <h2>5-Day Forecast</h2>
+        <div id="forecastCards" class="forecast-cards"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
